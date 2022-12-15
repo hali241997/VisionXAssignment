@@ -8,7 +8,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx src/",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx src/ --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx src/ --fix",
+    "build:android": "cd android && ./gradlew assembleRelease && cd ..",
+    "build:ios": "xcodebuild -workspace ios/VisionXAssignment.xcworkspace -scheme VisionXAssignment clean archive -sdk iphoneos -configuration Debug -UseModernBuildSystem=NO -archivePath $PWD/VisionXAssignment CODE_SIGNING_ALLOWED=NO"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.1",
