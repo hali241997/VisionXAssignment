@@ -6,12 +6,13 @@ module.exports = {
       {
         root: ["./src"],
         extensions: [".ios.js", ".android.js", ".js", ".ts", ".tsx", ".json"],
-        // alias: {
-        //   '@navigation': './src/navigation',
-        //   '@components': './src/components',
-        //   '@screens': './src/screens',
-        //   '@appstate': './src/redux',
-        // },
+        alias: {
+          "@navigation": "./src/navigation",
+          "@components": "./src/components",
+          "@screens": "./src/screens",
+          "@appstate": "./src/redux",
+          "@hooks": "./src/hooks",
+        },
       },
     ],
   ],
